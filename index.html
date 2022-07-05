@@ -10,12 +10,10 @@
       <div class="header-container outline-green">
         <a class="header-logo" href="#"><img src="images/device-logo.svg" alt="Логотип Device." width="145" height="36"></a>
         <div class="header-useful">
-          <div class="search-wrapper">
-            <form action="https://echo.htmlacademy.ru" method="get">
-              <input class="header-button-search" type="search" placeholder="Текст поиска">
-              <button class="header-button-search" type="submit">Найти</button>
-            </form>
-          </div>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <input class="header-search" type="search" placeholder="Текст поиска">
+            <button class="header-search" type="submit">Найти</button>
+          </form>
           <div class="login-wrapper">
             <button class="header-button button-log-in">Войти</button>
             <button class="header-button button-log-out">Выйти</button>
@@ -26,7 +24,7 @@
         <nav>
           <ul class="main-navigation">
             <li class="navigation-link">
-              <a class="catalog link" href="catalog.html">Каталог товаров</a>
+              <a class="catalog-link link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="navigation-link">
               <a class="link" href="#">Доставка</a>
@@ -50,13 +48,15 @@
         </div>
         <ol class="slides-list">
           <li class="slides-item">
-            <img src="images/slider/slider-1.png" alt="Квадрокоптер в белом корпусе." width="560" height="560">
+            <div class="slide-img-container">
+              <img src="images/slider/slider-1.png" alt="Квадрокоптер в белом корпусе." width="560" height="560">
+            </div>
             <div class="slide-desc-wrapper">
               <h2 class="slide-title section-title">Порхает как бабочка, жалит как пчела!</h2>
               <p class="slide-text">
                 Этот обычный, на&nbsp;первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
               </p>
-              <a class="slide-button button link" href="#">Подробнее</a>
+              <a class="button-slide-detailed button link" href="#">Подробнее</a>
               <dl class="slide-spec">
                 <div class="spec-wrapper">
                   <dt class="spec-termin">Дальность полета</dt>
@@ -70,7 +70,9 @@
             </div>
           </li>
           <li class="slides-item visually-hidden">
-            <img src="images/slider/slider-2.png" alt="Фитнес-браслет черного цвета." width="560" height="560">
+            <div class="slide-img-container">
+              <img src="images/slider/slider-2.png" alt="Фитнес-браслет черного цвета." width="560" height="560">
+            </div>
             <div class="slide-desc-wrapper">
               <h2 class="slide-title section-title">Худеем правильно!</h2>
               <p class="slide-text">
@@ -86,7 +88,9 @@
             </div>
           </li>
           <li class="slides-item visually-hidden">
-            <img src="images/slider/slider-3.png" alt="Селфи-палка раскладная." width="560" height="560">
+            <div class="slide-img-container">
+              <img src="images/slider/slider-3.png" alt="Селфи-палка раскладная." width="560" height="560">
+            </div>
             <div class="slide-desc-wrapper">
               <h2 class="slide-title section-title">Делай селфи, как&nbsp;Бен Стиллер!</h2>
               <p class="slide-text">
@@ -110,7 +114,7 @@
             </div>
           </li>
         </ol>
-        <div class="slider-buttons visually-hidden">
+        <div class="slider-buttons outline-green">
           <button class="button-slide button-slide-prev" type="button">
             <span class="visually-hidden">Предыдущий слайд</span>
           </button>
@@ -138,42 +142,42 @@
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="category-list">
           <li>
-            <a class="category-item" href="#">
+            <a class="category-item" href="/catalog.html">
               <div class="category-icon">
                 <img src="images/category/virtual.svg" alt="" width="97" height="55"></div>
               <span>Виртуальная реальность</span>
             </a>
           </li>
           <li>
-            <a class="category-item" href="#">
+            <a class="category-item" href="/catalog.html">
               <div class="category-icon">
                 <img src="images/category/selfie.svg" alt="" width="86" height="117"></div>
               <span>Моноподы для селфи</span>
             </a>
           </li>
           <li>
-            <a class="category-item" href="#">
+            <a class="category-item" href="/catalog.html">
               <div class="category-icon">
                 <img src="images/category/action-cam.svg" alt="" width="71" height="87"></div>
               <span>Экшн-камеры</span>
             </a>
           </li>
           <li>
-            <a class="category-item" href="#">
+            <a class="category-item" href="/catalog.html">
               <div class="category-icon">
                 <img src="images/category/fitness.svg" alt="" width="107" height="65"></div>
               <span>Фитнес-браслеты</span>
             </a>
           </li>
           <li>
-            <a class="category-item" href="#">
+            <a class="category-item" href="/catalog.html">
               <div class="category-icon">
                 <img src="images/category/clock.svg" alt="" width="56" height="98"></div>
               <span>Умные часы</span>
             </a>
           </li>
           <li>
-            <a class="category-item" href="#">
+            <a class="category-item" href="/catalog.html">
               <div class="category-icon">
                 <img src="images/category/kopter.svg" alt="" width="132" height="69"></div>
               <span>Квадрокоптеры</span>
@@ -187,7 +191,7 @@
         <div class="container services-container outline-red">
           <ol class="services-slider">
             <li>
-              <button class="service-button button service-button-active link">Доставка</button>
+              <button class="service-button-active link"><span>Доставка</span></button>
             </li>
             <li>
               <button class="service-button button link">Гарантия</button>
@@ -197,17 +201,23 @@
             </li>
           </ol>
           <ol class="services-list">
-            <li>
-              <h2 class="service-title section-title">Доставка</h2>
-              <p class="service-text">Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно! Ведь мы&nbsp;неплохо заработаем, поднимая его на&nbsp;ваш этаж.</p>
+            <li class="service-list-item service-list-delivery visually-hidden">
+              <div class="service-wrapper">
+                <h2 class="service-title section-title">Доставка</h2>
+                <p class="service-text">Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно! Ведь мы&nbsp;неплохо заработаем, поднимая его на&nbsp;ваш этаж.</p>
+              </div>
             </li>
-            <li class="visually-hidden">
-              <h2 class="service-title section-title">Гарантия</h2>
-              <p class="service-text">Если из-за возгорания купленного у&nbsp;нас товара у&nbsp;вас сгорит дом&nbsp;&mdash; не&nbsp;переживайте, мы&nbsp;выдадим вам новый. Товар, не&nbsp;дом, конечно&nbsp;же.</p>
+            <li class="service-list-item service-list-warranty visually-hidden">
+              <div class="service-wrapper">
+                <h2 class="service-title section-title">Гарантия</h2>
+                <p class="service-text">Если из-за возгорания купленного у&nbsp;нас товара у&nbsp;вас сгорит дом&nbsp;&mdash; не&nbsp;переживайте, мы&nbsp;выдадим вам новый. Товар, не&nbsp;дом, конечно&nbsp;же.</p>
+              </div>
             </li>
-            <li class="visually-hidden">
-              <h2 class="service-title section-title">Кредит</h2>
-              <p class="service-text">Залезть в&nbsp;долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+            <li class="service-list-item service-list-credit">
+              <div class="service-wrapper">
+                <h2 class="service-title section-title">Кредит</h2>
+                <p class="service-text">Залезть в&nbsp;долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+              </div>
             </li>
           </ol>
         </div>
@@ -215,7 +225,7 @@
 
       <section class="container delivery-banner">
         <h2 class="visually-hidden">Доставка</h2>
-        <p>Доставим редкий товар под заказ</p>
+        <p class="delivery-slogan">Доставим редкий товар под заказ</p>
       </section>
 
       <div class="container about-container outline-red">
@@ -228,7 +238,7 @@
             <li><span class="companies-item">СДИК</span></li>
             <li><span class="companies-item">ТоксБерри</span></li>
           </ul>
-          <a class="button link" href="#">Подробнее о нас</a>
+          <a class="button-about-detailed button link" href="#">Подробнее о нас</a>
         </section>
         <section class="about-contacts outline-green">
           <h2 class="about-title section-title">Контакты</h2>
@@ -237,20 +247,22 @@
           <address class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.<br><a class="about-tel" href="tel:+78128121212">+7 (812) 812-12-12</a></address>
           <h3>Время работы</h3>
           <p class="about-worktime about-text">пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
-          <a class="button link" href="#">Напишите нам</a>
+          <a class="button-about-mailus button link" href="#">Напишите нам</a>
         </section>
       </div>
 
       <section class="subscription">
-        <div class="container subscription-container outline-green">
-          <h2 class="subscription-title section-title">Подпишитесь на рассылку</h2>
-          <p class="subscription-description">Еженедельный дайджест с&nbsp;обзорами новинок, длительными тест-драйвами, распаковками, а&nbsp;также акции, спецпредложения и&nbsp;вот это вот всё.</p>
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <input type="email" placeholder="Ваш e-mail">
-              <button class="link" type="submit">Подписаться</button>
-            </form>
-            <span class="subscription-notice">Это бесплатно</span>
+        <div class="container outline-green">
+          <div class="subscription-container">
+            <h2 class="subscription-title section-title">Подпишитесь на&nbsp;рассылку</h2>
+            <p class="subscription-description">Еженедельный дайджест с&nbsp;обзорами новинок, длительными тест-драйвами, распаковками, а&nbsp;также акции, спецпредложения и&nbsp;вот это вот всё.</p>
           </div>
+          <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+            <input type="email" placeholder="Ваш e-mail">
+            <button class="link subscription-button" type="submit">Подписаться</button>
+            <span class="subscription-notice">Это бесплатно</span>
+          </form>
+        </div>
       </section>
     </main>
 
