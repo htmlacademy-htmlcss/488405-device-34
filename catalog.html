@@ -4,6 +4,7 @@
       <meta charset="utf-8">
       <title>HTML Academy: Девайс</title>
       <link rel="stylesheet" href="styles/styles.css">
+      <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   </head>
   <body>
     <header class="header container">
@@ -23,6 +24,41 @@
             <span>Корзина</span>
             <div class="basket-counter">2</div>
           </a>
+          <div class="popover popover-cart">
+            <div class="popover-content">
+              <ul class="cart-items-list">
+                <li class="cart-item">
+                  <a class="cart-item-wrap" href="#">
+                    <img src="./images/catalog/catalog-1-small.jpg" alt="Любительская селфи-палка." width="39" height="43">
+                    <span class="cart-item-title">Любительская селфи&#8209;палка</span>
+                  </a>
+                  <button type="button" class="cart-item-button">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="white"/>
+                    </svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+                <li class="cart-item">
+                  <a class="cart-item-wrap" href="#">
+                    <img src="./images/catalog/catalog-2-small.jpg" alt="Профессиональная селфи-палка." width="39" height="43">
+                    <span class="cart-item-title">Профессиональная селфи&#8209;палка</span>
+                  </a>
+                  <button type="button" class="cart-item-button">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="white"/>
+                    </svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="cart-desc">
+                <span class="cart-calc">Товаров: 2</span>
+                <span class="cart-sum">Сумма: 2000 ₽</span>
+              </div>
+              <a class="cart-open" href="#">Открыть корзину</a>
+            </div>
+          </div>
         </div>
         <nav>
           <ul class="main-navigation">
@@ -105,27 +141,27 @@
               <fieldset class="filter filter-color">
                 <legend>Цвет</legend>
                 <label class="choice">
-                  <input class="visually-hidden choice-input" type="checkbox" name="black" checked>
+                  <input class="choice-input visually-hidden" type="checkbox" name="black" checked>
                   <span class="choice-mark choice-mark-checkbox"></span>
                   <span class="choice-label">Черный</span>
                 </label>
                 <label class="choice">
-                  <input class="visually-hidden choice-input" type="checkbox" name="white">
+                  <input class="choice-input visually-hidden" type="checkbox" name="white">
                   <span class="choice-mark choice-mark-checkbox"></span>
                   <span class="choice-label">Белый</span>
                 </label>
                 <label class="choice">
-                  <input class="visually-hidden choice-input" type="checkbox" name="blue">
+                  <input class="choice-input visually-hidden" type="checkbox" name="blue">
                   <span class="choice-mark choice-mark-checkbox"></span>
                   <span class="choice-label">Синий</span>
                 </label>
                 <label class="choice">
-                  <input class="visually-hidden choice-input" type="checkbox" name="red" checked>
+                  <input class="choice-input visually-hidden" type="checkbox" name="red" checked>
                   <span class="choice-mark choice-mark-checkbox"></span>
                   <span class="choice-label">Красный</span>
                 </label>
                 <label class="choice">
-                  <input class="visually-hidden choice-input" type="checkbox" name="rose">
+                  <input class="choice-input visually-hidden" type="checkbox" name="rose">
                   <span class="choice-mark choice-mark-checkbox"></span>
                   <span class="choice-label">Розовый</span>
                 </label>
@@ -133,12 +169,12 @@
               <fieldset class="filter filter-bluetooth">
                 <legend>Bluetooth</legend>
                 <label class="choice bluetooth-choice">
-                  <input class="visually-hidden choice-input" type="radio" name="bluetooth" value="yes" checked>
+                  <input class="choice-input visually-hidden" type="radio" name="bluetooth" value="yes" checked>
                   <span class="choice-mark choice-mark-radio"></span>
                   <span class="choice-label">Есть</span>
                 </label>
                 <label class="choice bluetooth-choice">
-                  <input class="visually-hidden choice-input" type="radio" name="bluetooth" value="no">
+                  <input class="choice-input visually-hidden" type="radio" name="bluetooth" value="no">
                   <span class="choice-mark choice-mark-radio"></span>
                   <span class="choice-label">Нет</span>
                 </label>
